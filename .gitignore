@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Preuzeti podaci (mogu se ponovo preuzeti pomoću src/data.py)
+data/*.npz
+data/*.json
+
+# Veliki binarni artefakti modela (osim finalnog modela za Streamlit)
+models/*.pt
+!models/best_model.pt
+
+# Privremeni fajlovi
+*.log
+*.tmp
+.DS_Store
+results_quick_backup/
+
+# Lične beleške za pripremu odbrane (ne idu u repo)
+reports/Odbrana_pitanja_i_odgovori.md
+reports/Skripta_za_odbranu.md
+reports/Seminarski_plan.md
+
+# NAPOMENA: folderi mlruns/ i results/ se NAMERNO čuvaju u repozitorijumu
+# jer se traži da logovi eksperimenata i rezultati budu deo GitHub repozitorijuma.

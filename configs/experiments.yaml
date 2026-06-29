@@ -1,0 +1,51 @@
+# ============================================================================
+# Konfiguracija eksperimenata za domaći zadatak
+# ============================================================================
+
+data:
+  num_words: 20000        # veličina vokabulara (top N reči po učestalosti)
+  max_len: 200            # dužina sekvence nakon padding/truncation
+  subset_size: 8000       # uravnotežen podskup trening podataka (null = sve)
+  n_folds: 5              # broj foldova u kros-validaciji
+  epochs: 6
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0
+  seed: 42
+
+experiments:
+  - name: baseline
+    d_model: 64
+    n_heads: 2
+    n_layers: 1
+    dim_ff: 128
+    dropout: 0.1
+    pos_encoding: sinusoidal
+    activation: relu
+
+  - name: deeper_2_layers
+    d_model: 64
+    n_heads: 2
+    n_layers: 2
+    dim_ff: 128
+    dropout: 0.1
+    pos_encoding: sinusoidal
+    activation: relu
+
+  - name: wider_d128
+    d_model: 128
+    n_heads: 4
+    n_layers: 1
+    dim_ff: 256
+    dropout: 0.1
+    pos_encoding: sinusoidal
+    activation: gelu
+
+  - name: more_heads_4
+    d_model: 64
+    n_heads: 4
+    n_layers: 1
+    dim_ff: 128
+    dropout: 0.1
+    pos_encoding: sinusoidal
+    activation: relu

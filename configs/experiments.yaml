@@ -1,5 +1,12 @@
 # ============================================================================
 # Konfiguracija eksperimenata za domaći zadatak
+# ----------------------------------------------------------------------------
+# "data"  -> parametri pripreme podataka i treninga zajednički za sve modele
+# "experiments" -> lista od 6 konfiguracija modela (zahtev: najmanje 5)
+#
+# Napomena o brzini: subset_size, epochs i n_folds su podešeni tako da ceo
+# eksperiment radi na običnom laptopu (CPU) u razumnom vremenu. Za "pun" trening
+# postaviti subset_size: null (koristi svih 25000 recenzija) i povećati epochs.
 # ============================================================================
 
 data:
@@ -9,7 +16,7 @@ data:
   n_folds: 5              # broj foldova u kros-validaciji
   epochs: 6
   batch_size: 64
-  lr: 0.001
+  lr: 0.001               # podrazumevana stopa učenja (može se pregaziti po eksperimentu)
   weight_decay: 0.0
   seed: 42
 
@@ -48,4 +55,23 @@ experiments:
     dim_ff: 128
     dropout: 0.1
     pos_encoding: sinusoidal
+    activation: relu
+
+  - name: regularized_dropout03
+    d_model: 64
+    n_heads: 2
+    n_layers: 1
+    dim_ff: 128
+    dropout: 0.3
+    pos_encoding: sinusoidal
+    activation: relu
+    weight_decay: 0.0001
+
+  - name: learned_positional
+    d_model: 64
+    n_heads: 2
+    n_layers: 1
+    dim_ff: 128
+    dropout: 0.1
+    pos_encoding: learned
     activation: relu

@@ -1,0 +1,9 @@
+{
+  "config": {
+    "num_words": 20000,
+    "max_len": 200
+  },
+  "word_index_size": 88584,
+  "pad_id": 0,
+  "oov_id": 1
+}

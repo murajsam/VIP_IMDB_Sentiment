@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/ZVERKO/Desktop/MAS%20VIP/DOMACI/VIP_IMDB_Sentiment/mlruns/680229849943050913/367218724c4d45ca8fea3f5a6d0d4734/artifacts
+end_time: 1782930979128
+entry_point_name: ''
+experiment_id: '680229849943050913'
+lifecycle_stage: active
+run_id: 367218724c4d45ca8fea3f5a6d0d4734
+run_name: learned_positional
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1782930369417
+status: 3
+tags: []
+user_id: ZVERKO

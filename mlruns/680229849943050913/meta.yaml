@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/ZVERKO/Desktop/MAS%20VIP/DOMACI/VIP_IMDB_Sentiment/mlruns/680229849943050913
+creation_time: 1782924136102
+effective_trace_archival_retention: null
+experiment_id: '680229849943050913'
+last_update_time: 1782924136102
+lifecycle_stage: active
+name: IMDB_Sentiment_Transformer
+trace_location: null
+workspace: default

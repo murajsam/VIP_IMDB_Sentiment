@@ -18,3 +18,4 @@ seaborn>=0.12
 wordcloud>=1.9        # oblaci reči u EDA
 mlflow>=2.9           # praćenje eksperimenata
 PyYAML>=6.0           # čitanje configs/experiments.yaml
+streamlit>=1.30       # front-end aplikacija (seminarski rad)

@@ -1,0 +1,16 @@
+# U Docker sliku ne pakujemo velike i nepotrebne stvari
+.git
+__pycache__
+**/__pycache__
+.ipynb_checkpoints
+mlruns
+results
+results_quick_backup
+reports
+notebooks
+data/imdb.npz
+scripts
+configs
+*.md
+.venv
+venv

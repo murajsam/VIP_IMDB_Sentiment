@@ -1,0 +1,25 @@
+{
+  "model": {
+    "vocab_size": 20001,
+    "max_len": 200,
+    "d_model": 64,
+    "n_heads": 4,
+    "n_layers": 1,
+    "dim_ff": 128,
+    "dropout": 0.1,
+    "pos_encoding": "sinusoidal",
+    "activation": "relu",
+    "num_classes": 2,
+    "pad_id": 0
+  },
+  "test_metrics": {
+    "accuracy": 0.82284,
+    "precision": 0.8322219478060426,
+    "recall": 0.80872,
+    "f1": 0.8203026737533979,
+    "roc_auc": 0.9038130496,
+    "pr_auc": 0.8981560544828106
+  },
+  "num_words": 20000,
+  "max_len": 200
+}
